@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Digital";
+  src: url("../../assets/fonts/digital-7.woff") format("woff");
+}
+
+.ghost,
+.clock {
+  border-radius: 8px;
+  width: 180px;
+  font-size: 2.25rem;
+  font-family: "Digital";
+  border: 1px solid transparent;
+}
+
+.ghost {
+  position: absolute;
+  color: var(--primary-color-3);
+  z-index: 1;
+}
+
+.clock {
+  background: black;
+  position: relative;
+  color: var(--primary-color-9);
+  z-index: 2;
+}

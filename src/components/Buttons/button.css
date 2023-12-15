@@ -1,0 +1,120 @@
+.button {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+}
+
+.button:hover {
+  border: none;
+}
+
+.transport-button {
+  background: black;
+  color: var(--primary-color);
+  position: relative;
+  display: flex;
+  padding: 1.025em;
+  border-radius: 8px;
+  border: none;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.transport-button:hover {
+  outline: 4px auto var(--primary-color);
+}
+.transport-button:focus,
+.transport-button:focus-visible {
+  outline: 4px auto var(--primary-color);
+}
+.transport-button svg,
+.transport-button:focus-visible svg {
+  stroke: var(--primary-color-8);
+  fill: var(--primary-color-8);
+}
+
+.fx-panel .close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.solo-mute {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8px;
+}
+
+.solo-mute label {
+  width: 27px;
+  border: 3px solid transparent;
+  padding: 0.1rem;
+  border-radius: 100%;
+  user-select: none;
+  cursor: pointer;
+  font-weight: 900;
+  background: black;
+  color: var(--primary-color);
+  transition: all 0.2s;
+}
+
+.channel input[type="checkbox"]:checked + label {
+  background: var(--primary-color);
+  color: black;
+  /* padding: 2px 5px; */
+  border-radius: 100%;
+  height: min-content;
+  /* width: 24px; */
+}
+
+/* .solo input[type="checkbox"] + label:after {
+  content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZjY2YjMiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1jb3JuZXItcmlnaHQtdXAiPjxwb2x5bGluZSBwb2ludHM9IjEwIDkgMTUgNCAyMCA5Ii8+PHBhdGggZD0iTTQgMjBoN2E0IDQgMCAwIDAgNC00VjQiLz48L3N2Zz4=");
+  color: var(--primary-color);
+} */
+
+.toggle {
+  position: absolute;
+  appearance: none;
+  left: -1000px;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+}
+
+input[type="radio"].toggle:checked + label svg,
+input[type="checkbox"].toggle:checked + label svg {
+  background: var(--primary-color);
+  color: black;
+  transition: all 0.2s;
+  border-radius: 100%;
+  padding: 0;
+  height: min-content;
+  line-height: 0;
+}
+
+.channel input[type="radio"] + label svg,
+.channel .button svg {
+  width: 16px;
+  height: 16px;
+}
+
+.power-button input[type="checkbox"]:checked + label {
+  color: hsl(0, 0%, 46%);
+  transition: all 0.2s;
+}
+
+input[type="radio"].toggle:hover + label,
+input[type="checkbox"].toggle:hover + label {
+  scale: 1.2;
+  transition: all 0.2s;
+}
+
+.track-mode-select {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2px;
+}
